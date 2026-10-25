@@ -1,0 +1,16 @@
+[Unit]
+Description=BMS Watch Keyword Ranker
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/ubuntu/blog-management-system
+EnvironmentFile=/home/ubuntu/blog-management-system/.env
+ExecStart=/home/ubuntu/blog-management-system/venv/bin/python scripts/run_watch_ranker.py --loop
+Restart=always
+RestartSec=10
+User=ubuntu
+
+[Install]
+WantedBy=multi-user.target

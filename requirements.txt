@@ -1,0 +1,7 @@
+playwright
+discord.py
+python-dotenv
+fastapi
+uvicorn
+httpx
+pytest

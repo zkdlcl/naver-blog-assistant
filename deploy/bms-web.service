@@ -1,0 +1,16 @@
+[Unit]
+Description=BMS Mobile Web App
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/ubuntu/blog-management-system
+EnvironmentFile=/home/ubuntu/blog-management-system/.env
+ExecStart=/home/ubuntu/blog-management-system/venv/bin/python scripts/run_web.py
+Restart=always
+RestartSec=5
+User=ubuntu
+
+[Install]
+WantedBy=multi-user.target

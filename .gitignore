@@ -1,0 +1,49 @@
+# Environments
+.env
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# Runtime data
+data/*.sqlite3
+data/*.sqlite3-*
+data/pids/
+logs/
+
+# VSCode / IDE
+.vscode/
+.idea/
+
+# Local agent metadata
+.codex/*
+!.codex/hooks.json

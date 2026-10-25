@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="BMS">
+  <meta name="theme-color" content="#1f6f5b">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/static/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/static/icon.svg">
+  <link rel="stylesheet" href="/static/styles.css">
+  <title>BMS 로그인</title>
+</head>
+<body>
+  <main class="login-shell">
+    <section class="login-panel">
+      <img class="login-mark" src="/static/icon.svg" alt="">
+      <p class="eyebrow">Smile Studio</p>
+      <h1>오늘도 반가워요</h1>
+      <p class="hint">가족 전용 블로그 리포트입니다.</p>
+      <label for="passwordInput">비밀번호</label>
+      <input id="passwordInput" type="password" autocomplete="current-password">
+      <button id="loginButton" type="button">로그인</button>
+      <p id="loginStatus" class="error-text" aria-live="polite"></p>
+    </section>
+  </main>
+  <script src="/static/login.js"></script>
+</body>
+</html>
